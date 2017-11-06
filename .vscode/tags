@@ -4,13 +4,124 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-lista	../lists_tuples_sets.py	/^lista = [88, 99, 77, 66]$/;"	kind:variable	line:3
-lists_tuples_sets.py	../lists_tuples_sets.py	1;"	kind:file	line:1
-printMe	../test.py	/^def printMe(var):$/;"	kind:function	line:7
-set1	../lists_tuples_sets.py	/^set1 = { 88, 99, 77, 66}$/;"	kind:variable	line:25
-setOne	../lists_tuples_sets.py	/^setOne = {1, 2, 3, 4, 5}$/;"	kind:variable	line:28
-setTwo	../lists_tuples_sets.py	/^setTwo = {4, 5, 6, 7}$/;"	kind:variable	line:29
-test	../test.py	/^test = 'un test'$/;"	kind:variable	line:2
-test.py	../test.py	1;"	kind:file	line:1
-tuple1	../lists_tuples_sets.py	/^tuple1 = (88, 99, 77, 66)$/;"	kind:variable	line:14
-tuple1	../lists_tuples_sets.py	/^tuple1 = tuple1 + (100,)$/;"	kind:variable	line:18
+LotteryPlayer	../2. Python introduction/classes_objects.py	/^class LotteryPlayer:$/;"	kind:class	line:6
+Store	../2. Python introduction/excercise_1.py	/^class Store:$/;"	kind:class	line:1
+Store	../2. Python introduction/exercise2.py	/^class Store:$/;"	kind:class	line:1
+Student	../2. Python introduction/classes_inheritance.py	/^class Student():$/;"	kind:class	line:1
+Student	../2. Python introduction/classes_inheritance2.py	/^class Student():$/;"	kind:class	line:1
+Student	../2. Python introduction/classes_objects2.py	/^class Student:$/;"	kind:class	line:1
+Student2	../2. Python introduction/classes_inheritance2.py	/^class Student2():$/;"	kind:class	line:50
+WorkingStudent	../2. Python introduction/classes_inheritance.py	/^class WorkingStudent(Student):$/;"	kind:class	line:28
+WorkingStudent	../2. Python introduction/classes_inheritance2.py	/^class WorkingStudent(Student):$/;"	kind:class	line:18
+WorkingStudent2	../2. Python introduction/classes_inheritance2.py	/^class WorkingStudent2(Student):$/;"	kind:class	line:34
+WorkingStudent3	../2. Python introduction/classes_inheritance2.py	/^class WorkingStudent3(Student2):$/;"	kind:class	line:65
+__init__	../2. Python introduction/classes_inheritance.py	/^    def __init__(self, name, school):$/;"	kind:member	line:2
+__init__	../2. Python introduction/classes_inheritance.py	/^    def __init__(self, name, school, salary):$/;"	kind:member	line:29
+__init__	../2. Python introduction/classes_inheritance2.py	/^    def __init__(self, name, school):$/;"	kind:member	line:2
+__init__	../2. Python introduction/classes_inheritance2.py	/^    def __init__(self, name, school):$/;"	kind:member	line:51
+__init__	../2. Python introduction/classes_inheritance2.py	/^    def __init__(self, name, school, salary):$/;"	kind:member	line:19
+__init__	../2. Python introduction/classes_inheritance2.py	/^    def __init__(self, name, school, salary, jobTitle):$/;"	kind:member	line:35
+__init__	../2. Python introduction/classes_inheritance2.py	/^    def __init__(self, name, school, salary, jobTitle):$/;"	kind:member	line:66
+__init__	../2. Python introduction/classes_objects.py	/^    def __init__(self, name, numbers):$/;"	kind:member	line:10
+__init__	../2. Python introduction/classes_objects2.py	/^    def __init__(self, name, school):$/;"	kind:member	line:2
+__init__	../2. Python introduction/excercise_1.py	/^    def __init__(self, name):$/;"	kind:member	line:2
+__init__	../2. Python introduction/exercise2.py	/^    def __init__(self, name):$/;"	kind:member	line:2
+a	../2. Python introduction/list_comprehension.py	/^a = input('enter: ')$/;"	kind:variable	line:16
+add_item	../2. Python introduction/excercise_1.py	/^    def add_item(self, name, price):$/;"	kind:member	line:8
+add_item	../2. Python introduction/exercise2.py	/^    def add_item(self, name, price):$/;"	kind:member	line:6
+add_two_numbers	../2. Python introduction/passing_functions.py	/^def add_two_numbers():$/;"	kind:function	line:4
+addition_simplified	../2. Python introduction/classes_args_kwargs.py	/^def addition_simplified(*args):$/;"	kind:function	line:14
+anna	../2. Python introduction/classes_inheritance.py	/^anna = WorkingStudent('Anna', 'Oxford', 20.00)$/;"	kind:variable	line:35
+anna	../2. Python introduction/classes_inheritance2.py	/^anna = WorkingStudent('Anna', 'Oxford', 20.00)$/;"	kind:variable	line:25
+anna	../2. Python introduction/classes_objects2.py	/^anna = Student('Anna', 'MIT')$/;"	kind:variable	line:27
+app	../3. Flask/app.py	/^app = Flask(__name__)$/;"	kind:variable	line:3
+app	../3. Flask/app2.py	/^app = Flask(__name__)$/;"	kind:variable	line:3
+app	../3. Flask/app3.py	/^app = Flask(__name__)$/;"	kind:variable	line:3
+app.py	../3. Flask/app.py	1;"	kind:file	line:1
+app2.py	../3. Flask/app2.py	1;"	kind:file	line:1
+app3.py	../3. Flask/app3.py	1;"	kind:file	line:1
+ask_user	../2. Python introduction/if_statements.py	/^def ask_user():$/;"	kind:function	line:29
+average	../2. Python introduction/classes_inheritance.py	/^    def average(self):$/;"	kind:member	line:7
+average	../2. Python introduction/classes_inheritance2.py	/^    def average(self):$/;"	kind:member	line:56
+average	../2. Python introduction/classes_inheritance2.py	/^    def average(self):$/;"	kind:member	line:7
+average	../2. Python introduction/classes_objects.py	/^    def average(self):$/;"	kind:member	line:16
+average	../2. Python introduction/classes_objects2.py	/^    def average(self):$/;"	kind:member	line:7
+classes_args_kwargs.py	../2. Python introduction/classes_args_kwargs.py	1;"	kind:file	line:1
+classes_inheritance.py	../2. Python introduction/classes_inheritance.py	1;"	kind:file	line:1
+classes_inheritance2.py	../2. Python introduction/classes_inheritance2.py	1;"	kind:file	line:1
+classes_objects.py	../2. Python introduction/classes_objects.py	1;"	kind:file	line:1
+classes_objects2.py	../2. Python introduction/classes_objects2.py	1;"	kind:file	line:1
+create_item	../3. Flask/app3.py	/^def create_item(name):$/;"	kind:function	line:36
+create_store	../3. Flask/app3.py	/^def create_store():$/;"	kind:function	line:18
+decorator_with_arguments	../2. Python introduction/decorators_complex.py	/^def decorator_with_arguments(number):$/;"	kind:function	line:20
+decorators.py	../2. Python introduction/decorators.py	1;"	kind:file	line:1
+decorators_complex.py	../2. Python introduction/decorators_complex.py	1;"	kind:file	line:1
+dictionaries.py	../2. Python introduction/dictionaries.py	1;"	kind:file	line:1
+excercise_1.py	../2. Python introduction/excercise_1.py	1;"	kind:file	line:1
+exercise2.py	../2. Python introduction/exercise2.py	1;"	kind:file	line:1
+f	../2. Python introduction/passing_functions.py	/^def f(x):$/;"	kind:function	line:39
+franchise	../2. Python introduction/exercise2.py	/^    def franchise(cls, store):$/;"	kind:member	line:19
+friend	../2. Python introduction/classes_inheritance.py	/^    def friend(cls, origin, friendName, salary):$/;"	kind:member	line:14
+friend	../2. Python introduction/classes_inheritance.py	/^friend = WorkingStudent.friend(anna, 'Greg', 10.00)$/;"	kind:variable	line:37
+friend	../2. Python introduction/classes_inheritance2.py	/^    def friend(cls, origin, friendName, **kwargs):$/;"	kind:member	line:60
+friend	../2. Python introduction/classes_inheritance2.py	/^    def friend(cls, origin, friendName, *args):$/;"	kind:member	line:11
+friend	../2. Python introduction/classes_inheritance2.py	/^friend = WorkingStudent.friend(anna, 'Greg', 10.00)$/;"	kind:variable	line:27
+friend2	../2. Python introduction/classes_inheritance2.py	/^friend2 = WorkingStudent2.friend(anna, 'Greg', 10.00, 'Software Developer')$/;"	kind:variable	line:43
+friend3	../2. Python introduction/classes_inheritance2.py	/^friend3 = WorkingStudent3.friend(anna, 'Greg', salary=10.00, jobTitle='Software Developer')$/;"	kind:variable	line:74
+function_than_runs_fun	../2. Python introduction/decorators.py	/^    def function_than_runs_fun():$/;"	kind:function	line:5
+function_than_runs_fun	../2. Python introduction/decorators_complex.py	/^    def function_than_runs_fun():$/;"	kind:function	line:5
+function_than_runs_func	../2. Python introduction/decorators_complex.py	/^        def function_than_runs_func(*args, **kwargs): # pt a face functia generica se pun args si kwargs$/;"	kind:function	line:23
+get_items_in_store	../3. Flask/app3.py	/^def get_items_in_store(name):$/;"	kind:function	line:40
+get_store	../3. Flask/app3.py	/^def get_store(name):$/;"	kind:function	line:28
+get_stores	../3. Flask/app3.py	/^def get_stores():$/;"	kind:function	line:32
+go_to_school	../2. Python introduction/classes_objects2.py	/^    def go_to_school(self):$/;"	kind:member	line:10
+go_to_school_generic	../2. Python introduction/classes_objects2.py	/^    def go_to_school_generic(cls):$/;"	kind:member	line:19
+go_to_school_generic2	../2. Python introduction/classes_objects2.py	/^    def go_to_school_generic2():$/;"	kind:member	line:24
+home	../3. Flask/app2.py	/^def home():$/;"	kind:function	line:6
+if_statements.py	../2. Python introduction/if_statements.py	1;"	kind:file	line:1
+known_people	../2. Python introduction/if_statements.py	/^known_people = ['Jonh', 'Anna', 'Mary']$/;"	kind:variable	line:1
+list_comprehension.py	../2. Python introduction/list_comprehension.py	1;"	kind:file	line:1
+lista	../2. Python introduction/lists_tuples_sets.py	/^lista = [88, 99, 77, 66]$/;"	kind:variable	line:3
+lists_tuples_sets.py	../2. Python introduction/lists_tuples_sets.py	1;"	kind:file	line:1
+lottery_player	../2. Python introduction/classes_objects.py	/^lottery_player = {$/;"	kind:variable	line:1
+lottery_player	../2. Python introduction/dictionaries.py	/^lottery_player = {$/;"	kind:variable	line:8
+methodception	../2. Python introduction/passing_functions.py	/^def methodception(another):$/;"	kind:function	line:1
+methodception2	../2. Python introduction/passing_functions.py	/^def methodception2(another):$/;"	kind:function	line:11
+my_decorator	../2. Python introduction/decorators.py	/^def my_decorator(func):$/;"	kind:function	line:3
+my_decorator	../2. Python introduction/decorators_complex.py	/^    def my_decorator(func):$/;"	kind:function	line:21
+my_decorator	../2. Python introduction/decorators_complex.py	/^def my_decorator(func):$/;"	kind:function	line:3
+my_dict	../2. Python introduction/dictionaries.py	/^my_dict = { 'name': 'Jose', 'age': 90, 'grades': [1, 20, 11, 14] }$/;"	kind:variable	line:5
+my_dict2	../2. Python introduction/dictionaries.py	/^my_dict2 = { 1: 20, 3: 77, 8: 210}$/;"	kind:variable	line:6
+my_function	../2. Python introduction/decorators.py	/^def my_function():$/;"	kind:function	line:12
+my_function	../2. Python introduction/decorators_complex.py	/^def my_function():$/;"	kind:function	line:12
+my_function_too	../2. Python introduction/decorators_complex.py	/^def my_function_too(x, y):$/;"	kind:function	line:35
+my_list	../2. Python introduction/passing_functions.py	/^my_list = [212, 23, 9998, 98099, 776, 67667]$/;"	kind:variable	line:19
+my_list_adition	../2. Python introduction/classes_args_kwargs.py	/^def my_list_adition (list_arg):$/;"	kind:function	line:9
+my_long_method	../2. Python introduction/classes_args_kwargs.py	/^def my_long_method(arg1, arg2, arg3, arg4):$/;"	kind:function	line:4
+my_method	../2. Python introduction/classes_args_kwargs.py	/^def my_method(arg1, arg2):$/;"	kind:function	line:1
+my_set	../2. Python introduction/dictionaries.py	/^my_set = { 1, 2, 3, 4, 5} # unordered unique elements$/;"	kind:variable	line:1
+normalised_people	../2. Python introduction/list_comprehension.py	/^normalised_people = [ person.strip().lower() for person in people_you_know]$/;"	kind:variable	line:13
+passing_functions.py	../2. Python introduction/passing_functions.py	1;"	kind:file	line:1
+people_you_know	../2. Python introduction/list_comprehension.py	/^people_you_know = ['Greg', ' John', 'anna', 'GREG']$/;"	kind:variable	line:12
+player_one	../2. Python introduction/classes_objects.py	/^player_one = LotteryPlayer('Rolf', (8, 0, 88, 82, 11))$/;"	kind:variable	line:26
+player_two	../2. Python introduction/classes_objects.py	/^player_two = LotteryPlayer('John', (8, 4, 22, 81, 1))$/;"	kind:variable	line:28
+printMe	../2. Python introduction/test.py	/^def printMe(var):$/;"	kind:function	line:7
+set1	../2. Python introduction/lists_tuples_sets.py	/^set1 = { 88, 99, 77, 66}$/;"	kind:variable	line:25
+setOne	../2. Python introduction/lists_tuples_sets.py	/^setOne = {1, 2, 3, 4, 5}$/;"	kind:variable	line:28
+setTwo	../2. Python introduction/lists_tuples_sets.py	/^setTwo = {4, 5, 6, 7}$/;"	kind:variable	line:29
+stock_price	../2. Python introduction/excercise_1.py	/^    def stock_price(self):$/;"	kind:member	line:14
+stock_price	../2. Python introduction/exercise2.py	/^    def stock_price(self):$/;"	kind:member	line:12
+store	../2. Python introduction/exercise2.py	/^store = Store("Test")$/;"	kind:variable	line:39
+store2	../2. Python introduction/exercise2.py	/^store2 = Store("Amazon")$/;"	kind:variable	line:40
+store_details	../2. Python introduction/exercise2.py	/^    def store_details(store):$/;"	kind:member	line:26
+stores	../3. Flask/app3.py	/^stores = [$/;"	kind:variable	line:5
+test	../2. Python introduction/test.py	/^test = 'un test'$/;"	kind:variable	line:2
+test.py	../2. Python introduction/test.py	1;"	kind:file	line:1
+total	../2. Python introduction/classes_objects.py	/^    def total(self):$/;"	kind:member	line:14
+tuple1	../2. Python introduction/lists_tuples_sets.py	/^tuple1 = (88, 99, 77, 66)$/;"	kind:variable	line:14
+tuple1	../2. Python introduction/lists_tuples_sets.py	/^tuple1 = tuple1 + (100,)$/;"	kind:variable	line:18
+universities_list	../2. Python introduction/dictionaries.py	/^universities_list = [$/;"	kind:variable	line:16
+what_are_kwars	../2. Python introduction/classes_args_kwargs.py	/^def what_are_kwars(*args, **kwargs):$/;"	kind:function	line:19
+what_are_kwars2	../2. Python introduction/classes_args_kwargs.py	/^def what_are_kwars2(name, location):$/;"	kind:function	line:29
+what_are_kwars3	../2. Python introduction/classes_args_kwargs.py	/^def what_are_kwars3(arg1, name, location):$/;"	kind:function	line:35
+who_do_you_know_simplified	../2. Python introduction/if_statements.py	/^def who_do_you_know_simplified():$/;"	kind:function	line:25
