@@ -36,13 +36,16 @@ class Item(Resource):
         return {'item': item}, 200 if item else 404
 
     def post(self, name):
+        # Error first aproach
+        
+        if next(filter(lambda x: x['name'] == name, items), None):
+            # 400 = bad request
+            return {'message': "item with name: '{}' is allready in DB!".format(name)}, 400
+
         # only 'price' is passed, any other fields are dropped
         # data = request.get_json() # replaced by parser
         data = Item.parser.parse_args()
 
-        if next(filter(lambda x: x['name'] == name, items), None):
-            # 400 = bad request
-            return {'message': "item with name: '{}' is allready in DB!".format(name)}, 400
         data = request.get_json()
         item = {'name': name, 'price': data['price']}
         items.append(item)
