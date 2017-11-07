@@ -1019,7 +1019,7 @@ InvalidHeaderError	../venv/lib/python3.5/tarfile.py	/^class InvalidHeaderError(H
 Item	../4.RESTful/code/app.py	/^class Item(Resource):$/;"	kind:class	line:18
 Item	../5.Database/code/item.py	/^class Item(Resource):$/;"	kind:class	line:6
 ItemList	../4.RESTful/code/app.py	/^class ItemList(Resource):$/;"	kind:class	line:88
-ItemList	../5.Database/code/item.py	/^class ItemList(Resource):$/;"	kind:class	line:81
+ItemList	../5.Database/code/item.py	/^class ItemList(Resource):$/;"	kind:class	line:96
 ItemsView	../venv/lib/python3.5/_collections_abc.py	/^class ItemsView(MappingView, Set):$/;"	kind:class	line:660
 Iterable	../venv/lib/python3.5/_collections_abc.py	/^class Iterable(metaclass=ABCMeta):$/;"	kind:class	line:192
 Iterator	../venv/lib/python3.5/_collections_abc.py	/^class Iterator(Iterable):$/;"	kind:class	line:209
@@ -3917,7 +3917,7 @@ defpath	../venv/lib/python3.5/ntpath.py	/^    defpath = '\\\\Windows'$/;"	kind:v
 defpath	../venv/lib/python3.5/ntpath.py	/^defpath = '.;C:\\\\bin'$/;"	kind:variable	line:30
 defpath	../venv/lib/python3.5/posixpath.py	/^defpath = ':\/bin:\/usr\/bin'$/;"	kind:variable	line:35
 delete	../4.RESTful/code/app.py	/^    def delete(self, name):$/;"	kind:member	line:54
-delete	../5.Database/code/item.py	/^    def delete(self, name):$/;"	kind:member	line:47
+delete	../5.Database/code/item.py	/^    def delete(self, name):$/;"	kind:member	line:54
 deleter	../venv/lib/python3.5/types.py	/^    def deleter(self, fdel):$/;"	kind:member	line:160
 delitem	../venv/lib/python3.5/operator.py	/^def delitem(a, b):$/;"	kind:function	line:165
 delocalize	../venv/lib/python3.5/locale.py	/^def delocalize(string):$/;"	kind:function	line:303
@@ -4341,6 +4341,7 @@ finalize	../venv/lib/python3.5/weakref.py	/^class finalize:$/;"	kind:class	line:
 finalize_options	../venv/lib/python3.5/distutils/__init__.py	/^        def finalize_options (self):$/;"	kind:member	line:38
 find	../venv/lib/python3.5/collections/__init__.py	/^    def find(self, sub, start=0, end=_sys.maxsize):$/;"	kind:member	line:1182
 find_by_id	../5.Database/code/user.py	/^    def find_by_id(cls, _id):$/;"	kind:member	line:28
+find_by_name	../5.Database/code/item.py	/^    def find_by_name(cls, name):$/;"	kind:member	line:23
 find_by_username	../5.Database/code/user.py	/^    def find_by_username(cls, username):$/;"	kind:member	line:11
 find_config_files	../venv/lib/python3.5/distutils/__init__.py	/^def find_config_files(self):$/;"	kind:function	line:53
 find_cookie	../venv/lib/python3.5/tokenize.py	/^    def find_cookie(line):$/;"	kind:function	line:387
@@ -4425,7 +4426,7 @@ generators	../venv/lib/python3.5/__future__.py	/^generators = _Feature((2, 2, 0,
 genericpath.py	../venv/lib/python3.5/genericpath.py	1;"	kind:file	line:1
 get	../4.RESTful/code/app.py	/^    def get(self):$/;"	kind:member	line:89
 get	../4.RESTful/code/app.py	/^    def get(self, name):$/;"	kind:member	line:28
-get	../5.Database/code/item.py	/^    def get(self):$/;"	kind:member	line:82
+get	../5.Database/code/item.py	/^    def get(self):$/;"	kind:member	line:97
 get	../5.Database/code/item.py	/^    def get(self, name):$/;"	kind:member	line:16
 get	../venv/lib/python3.5/_collections_abc.py	/^    def get(self, key, default=None):$/;"	kind:member	line:594
 get	../venv/lib/python3.5/collections/__init__.py	/^    def get(self, key, default=None):$/;"	kind:member	line:883
@@ -5098,7 +5099,7 @@ popitem	../venv/lib/python3.5/weakref.py	/^    def popitem(self):$/;"	kind:membe
 pos	../venv/lib/python3.5/operator.py	/^def pos(a):$/;"	kind:function	line:120
 posixpath.py	../venv/lib/python3.5/posixpath.py	1;"	kind:file	line:1
 post	../4.RESTful/code/app.py	/^    def post(self, name):$/;"	kind:member	line:38
-post	../5.Database/code/item.py	/^    def post(self, name):$/;"	kind:member	line:31
+post	../5.Database/code/item.py	/^    def post(self, name):$/;"	kind:member	line:36
 post	../5.Database/code/user.py	/^    def post(self):$/;"	kind:member	line:60
 pow	../venv/lib/python3.5/operator.py	/^def pow(a, b):$/;"	kind:function	line:124
 prepare_class	../venv/lib/python3.5/types.py	/^def prepare_class(name, bases=(), kwds=None):$/;"	kind:function	line:59
@@ -5112,7 +5113,7 @@ punycode_decode	../venv/lib/python3.5/encodings/punycode.py	/^def punycode_decod
 punycode_encode	../venv/lib/python3.5/encodings/punycode.py	/^def punycode_encode(text):$/;"	kind:function	line:117
 purge	../venv/lib/python3.5/re.py	/^def purge():$/;"	kind:function	line:226
 put	../4.RESTful/code/app.py	/^    def put(self, name):$/;"	kind:member	line:61
-put	../5.Database/code/item.py	/^    def put(self, name):$/;"	kind:member	line:54
+put	../5.Database/code/item.py	/^    def put(self, name):$/;"	kind:member	line:69
 python-config	../venv/bin/python-config	1;"	kind:file	line:1
 python-config.py	../venv/lib/python3.5/config-3.5m-x86_64-linux-gnu/python-config.py	1;"	kind:file	line:1
 pyver	../venv/bin/python-config	/^pyver = sysconfig.get_config_var('VERSION')$/;"	kind:variable	line:30
