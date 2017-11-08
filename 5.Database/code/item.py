@@ -14,7 +14,11 @@ class Item(Resource):
 
     @jwt_required()
     def get(self, name):
-        item = self.find_by_name(name)
+        try:
+            item = self.find_by_name(name)
+        except:
+            return {'message': 'An error occourred inserting the item.'}, 500
+
         if item:
             return item
         return {'message': 'Item not found'}, 404
@@ -38,8 +42,17 @@ class Item(Resource):
             return {'message': "item with name: '{}' is allready in DB!".format(name)}, 400
 
         data = Item.parser.parse_args()
-        item = {'name': name, 'price': data['price']}
 
+        item = {'name': name, 'price': data['price']}
+        try:
+            self.insert(item)
+        except:
+            return {'message': 'An error occourred inserting the item.'}, 500
+
+        return item, 201
+
+    @classmethod
+    def insert(cls, item):
         connection = sqlite3.connect('data.db')
         cursor = connection.cursor()
         
@@ -48,8 +61,6 @@ class Item(Resource):
 
         connection.commit()
         connection.close()
-
-        return item, 201
 
     def delete(self, name):
         if Item.find_by_name(name) is None:
@@ -67,33 +78,47 @@ class Item(Resource):
         return {'message': 'Item deleted'}, 201
 
     def put(self, name):
-        # il mutam la nivel de obiect
-
-        # parser = reqparse.RequestParser()
-        # parser.add_argument(
-        #     'price',
-        #     type=float,
-        #     required=True,
-        #     help="This field cannot be empty!"
-        # )
-
-        # only 'price' is passed, any other fields are dropped
-        # data = request.get_json() # replaced by parser
-        # data = parser.parse_args()
+        item = self.find_by_name(name)
 
         data = Item.parser.parse_args()
+        updated_item = {'name': name, 'price': data['price']}
 
-        item = next(filter(lambda x: x['name'] == name, items), None)
         if item is None:
-            item = {'name': name, 'price': data['price']}
-            items.append(item)
-            return item, 201
+            try:
+                self.insert(updated_item)
+            except:
+                return {'message': 'An error occourred inserting the item.'}, 500
         else:
-            item.update(data)
-            return item, 200
+            try:
+                self.update(updated_item)
+            except:
+                return {'message': 'An error occourred inserting the item.'}, 500
+
+        return updated_item, 200
+
+@classmethod
+def update(cls, item):
+        connection = sqlite3.connect('data.db')
+        cursor = connection.cursor()
+        
+        query = 'UPDATE items SET price=? WHERE name=?'
+        cursor.execute(query, (item['price'], item['name'], ))
+
+        connection.commit()
+        connection.close()
 
 
 class ItemList(Resource):
     def get(self):
+        connection = sqlite3.connect('data.db')
+        cursor = connection.cursor()
         
+        query = 'SELECT * FROM items'
+        result = cursor.execute(query)
+        items = []
+        for row in result:
+            items.append({'name': row[0], 'price': row[1]})
+
+        connection.close()
+
         return {'items': items}, 200
