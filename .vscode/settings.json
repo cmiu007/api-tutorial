@@ -1,3 +1,7 @@
 {
-    "python.pythonPath": "c:/Home/pers/angular/api-tutorial/venv/scripts/python.exe"
+    "python.pythonPath": "c:/Home/pers/angular/api-tutorial/venv/scripts/python.exe",
+    "files.exclude": {
+        "**/.git": true,
+        "**/__pycache__": true
+    }
 }

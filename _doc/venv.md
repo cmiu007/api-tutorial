@@ -20,6 +20,8 @@ virtualenv.exe venv --python=python.exe
 all
 
 ```bash
-pip install Flask-RESTful
+pip install Flask
 pip install Flask-JWT
+pip install Flask-RESTful
+pip install Flask-SQLAlchemy
 ```
