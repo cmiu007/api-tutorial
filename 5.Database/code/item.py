@@ -14,6 +14,13 @@ class Item(Resource):
 
     @jwt_required()
     def get(self, name):
+        item = self.find_by_name(name)
+        if item:
+            return item
+        return {'message': 'Item not found'}, 404
+
+    @classmethod
+    def find_by_name(cls, name):
         connection = sqlite3.connect('data.db')
         cursor = connection.cursor()
 
@@ -24,32 +31,40 @@ class Item(Resource):
         connection.close()
         print(row)
         if row:
-            return {'item': {'name': row[0], 'price': row[1]}}, 200
-
-        return {'message': 'Item not found'}, 404
+            return {'item': {'name': row[0], 'price': row[1]}}
 
     def post(self, name):
-        # Error first aproach
-        
-        if next(filter(lambda x: x['name'] == name, items), None):
-            # 400 = bad request
+        if Item.find_by_name(name):
             return {'message': "item with name: '{}' is allready in DB!".format(name)}, 400
 
-        # only 'price' is passed, any other fields are dropped
-        # data = request.get_json() # replaced by parser
         data = Item.parser.parse_args()
-
-        data = request.get_json()
         item = {'name': name, 'price': data['price']}
-        items.append(item)
+
+        connection = sqlite3.connect('data.db')
+        cursor = connection.cursor()
+        
+        query = 'INSERT INTO items VALUES (?, ?)'
+        cursor.execute(query, (item['name'], item['price']))
+
+        connection.commit()
+        connection.close()
+
         return item, 201
 
     def delete(self, name):
-        global items  # use items global variable to initialise local variable
-        if next(filter(lambda x: x['name'] == name, items), None):
-            items = list(filter(lambda x: x['name'] != name, items))
-            return {'message': 'Item deleted'}, 201
-        return {'message': "Not deleted, item with name:'{}' was not found".format(name)}, 400
+        if Item.find_by_name(name) is None:
+            return {'message': "Not deleted, item with name:'{}' was not found".format(name)}, 400
+
+        connection = sqlite3.connect('data.db')
+        cursor = connection.cursor()
+
+        query = 'DELETE FROM items WHERE name=?'
+        cursor.execute(query, (name,))
+
+        connection.commit()
+        connection.close()    
+
+        return {'message': 'Item deleted'}, 201
 
     def put(self, name):
         # il mutam la nivel de obiect
@@ -80,4 +95,5 @@ class Item(Resource):
 
 class ItemList(Resource):
     def get(self):
+        
         return {'items': items}, 200
