@@ -1018,8 +1018,11 @@ Intnumber	../venv/lib/python3.5/tokenize.py	/^Intnumber = group(Hexnumber, Binnu
 InvalidHeaderError	../venv/lib/python3.5/tarfile.py	/^class InvalidHeaderError(HeaderError):$/;"	kind:class	line:294
 Item	../4.RESTful/code/app.py	/^class Item(Resource):$/;"	kind:class	line:18
 Item	../5.Database/code/item.py	/^class Item(Resource):$/;"	kind:class	line:6
+Item	../6.SQLAlchemy/code/resources/item.py	/^class Item(Resource):$/;"	kind:class	line:7
 ItemList	../4.RESTful/code/app.py	/^class ItemList(Resource):$/;"	kind:class	line:88
-ItemList	../5.Database/code/item.py	/^class ItemList(Resource):$/;"	kind:class	line:96
+ItemList	../5.Database/code/item.py	/^class ItemList(Resource):$/;"	kind:class	line:111
+ItemList	../6.SQLAlchemy/code/resources/item.py	/^class ItemList(Resource):$/;"	kind:class	line:69
+ItemModel	../6.SQLAlchemy/code/models/item.py	/^class ItemModel(db.Model):$/;"	kind:class	line:4
 ItemsView	../venv/lib/python3.5/_collections_abc.py	/^class ItemsView(MappingView, Set):$/;"	kind:class	line:660
 Iterable	../venv/lib/python3.5/_collections_abc.py	/^class Iterable(metaclass=ABCMeta):$/;"	kind:class	line:192
 Iterator	../venv/lib/python3.5/_collections_abc.py	/^class Iterator(Iterable):$/;"	kind:class	line:209
@@ -1428,6 +1431,9 @@ SpooledTemporaryFile	../venv/lib/python3.5/tempfile.py	/^class SpooledTemporaryF
 StopTokenizing	../venv/lib/python3.5/tokenize.py	/^class StopTokenizing(Exception): pass$/;"	kind:class	line:221
 Store	../2.Python introduction/excercise_1.py	/^class Store:$/;"	kind:class	line:1
 Store	../2.Python introduction/exercise2.py	/^class Store:$/;"	kind:class	line:1
+Store	../6.SQLAlchemy/code/resources/store.py	/^class Store(Resource):$/;"	kind:class	line:4
+StoreList	../6.SQLAlchemy/code/resources/store.py	/^class StoreList(Resource):$/;"	kind:class	line:34
+StoreModel	../6.SQLAlchemy/code/models/store.py	/^class StoreModel(db.Model):$/;"	kind:class	line:4
 StreamConverter	../venv/lib/python3.5/encodings/ascii.py	/^class StreamConverter(StreamWriter,StreamReader):$/;"	kind:class	line:34
 StreamConverter	../venv/lib/python3.5/encodings/latin_1.py	/^class StreamConverter(StreamWriter,StreamReader):$/;"	kind:class	line:34
 StreamError	../venv/lib/python3.5/tarfile.py	/^class StreamError(TarError):$/;"	kind:class	line:279
@@ -1747,7 +1753,9 @@ User	../4.RESTful/code/user.py	/^class User:$/;"	kind:class	line:1
 User	../5.Database/code/user.py	/^class User:$/;"	kind:class	line:4
 UserDict	../venv/lib/python3.5/collections/__init__.py	/^class UserDict(MutableMapping):$/;"	kind:class	line:959
 UserList	../venv/lib/python3.5/collections/__init__.py	/^class UserList(MutableSequence):$/;"	kind:class	line:1026
+UserModel	../6.SQLAlchemy/code/models/user.py	/^class UserModel(db.Model):$/;"	kind:class	line:3
 UserRegister	../5.Database/code/user.py	/^class UserRegister(Resource):$/;"	kind:class	line:45
+UserRegister	../6.SQLAlchemy/code/resources/user.py	/^class UserRegister(Resource):$/;"	kind:class	line:5
 UserString	../venv/lib/python3.5/collections/__init__.py	/^class UserString(Sequence):$/;"	kind:class	line:1099
 VBAR	../venv/lib/python3.5/token.py	/^VBAR = 18$/;"	kind:variable	line:31
 VBAREQUAL	../venv/lib/python3.5/token.py	/^VBAREQUAL = 42$/;"	kind:variable	line:55
@@ -2405,6 +2413,9 @@ __init__	../2.Python introduction/excercise_1.py	/^    def __init__(self, name):
 __init__	../2.Python introduction/exercise2.py	/^    def __init__(self, name):$/;"	kind:member	line:2
 __init__	../4.RESTful/code/user.py	/^    def __init__(self, _id, username, password):$/;"	kind:member	line:2
 __init__	../5.Database/code/user.py	/^    def __init__(self, _id, username, password):$/;"	kind:member	line:5
+__init__	../6.SQLAlchemy/code/models/item.py	/^    def __init__(self, name, price, store_id):$/;"	kind:member	line:14
+__init__	../6.SQLAlchemy/code/models/store.py	/^    def __init__(self, name):$/;"	kind:member	line:18
+__init__	../6.SQLAlchemy/code/models/user.py	/^    def __init__(self, username, password):$/;"	kind:member	line:10
 __init__	../venv/lib/python3.5/__future__.py	/^    def __init__(self, optionalRelease, mandatoryRelease, compiler_flag):$/;"	kind:member	line:79
 __init__	../venv/lib/python3.5/_collections_abc.py	/^    def __init__(self, mapping):$/;"	kind:member	line:633
 __init__	../venv/lib/python3.5/_dummy_thread.py	/^    def __init__(self):$/;"	kind:member	line:99
@@ -2497,10 +2508,12 @@ __init__	../venv/lib/python3.5/weakref.py	/^    def __init__(*args, **kw):$/;"	k
 __init__	../venv/lib/python3.5/weakref.py	/^    def __init__(self, dict=None):$/;"	kind:member	line:354
 __init__	../venv/lib/python3.5/weakref.py	/^    def __init__(self, ob, callback, key):$/;"	kind:member	line:339
 __init__	../venv/lib/python3.5/weakref.py	/^    def __init__(self, obj, func, *args, **kwargs):$/;"	kind:member	line:526
+__init__.py	../6.SQLAlchemy/code/resources/__init__.py	1;"	kind:file	line:1
 __init__.py	../venv/lib/python3.5/collections/__init__.py	1;"	kind:file	line:1
 __init__.py	../venv/lib/python3.5/distutils/__init__.py	1;"	kind:file	line:1
 __init__.py	../venv/lib/python3.5/encodings/__init__.py	1;"	kind:file	line:1
 __init__.py	../venv/lib/python3.5/importlib/__init__.py	1;"	kind:file	line:1
+__init___.py	../6.SQLAlchemy/code/models/__init___.py	1;"	kind:file	line:1
 __instancecheck__	../venv/lib/python3.5/abc.py	/^    def __instancecheck__(cls, instance):$/;"	kind:member	line:178
 __int__	../venv/lib/python3.5/collections/__init__.py	/^    def __int__(self): return int(self.data)$/;"	kind:member	line:1109
 __inv__	../venv/lib/python3.5/operator.py	/^__inv__ = inv$/;"	kind:variable	line:432
@@ -2747,6 +2760,9 @@ __subclasshook__	../venv/lib/python3.5/_collections_abc.py	/^    def __subclassh
 __subclasshook__	../venv/lib/python3.5/_collections_abc.py	/^    def __subclasshook__(cls, C):$/;"	kind:member	line:343
 __subclasshook__	../venv/lib/python3.5/_collections_abc.py	/^    def __subclasshook__(cls, C):$/;"	kind:member	line:75
 __subclasshook__	../venv/lib/python3.5/_collections_abc.py	/^    def __subclasshook__(cls, C):$/;"	kind:member	line:94
+__tablename__	../6.SQLAlchemy/code/models/item.py	/^    __tablename__ = 'items'$/;"	kind:variable	line:5
+__tablename__	../6.SQLAlchemy/code/models/store.py	/^    __tablename__ = 'stores'$/;"	kind:variable	line:5
+__tablename__	../6.SQLAlchemy/code/models/user.py	/^    __tablename__ = 'users'$/;"	kind:variable	line:4
 __time_t_defined	../venv/lib/python3.5/plat-x86_64-linux-gnu/IN.py	/^__time_t_defined = 1$/;"	kind:variable	line:338
 __time_t_defined	../venv/lib/python3.5/plat-x86_64-linux-gnu/TYPES.py	/^__time_t_defined = 1$/;"	kind:variable	line:110
 __timer_t_defined	../venv/lib/python3.5/plat-x86_64-linux-gnu/IN.py	/^__timer_t_defined = 1$/;"	kind:variable	line:340
@@ -3207,14 +3223,17 @@ anna	../2.Python introduction/classes_objects2.py	/^anna = Student('Anna', 'MIT'
 any	../venv/lib/python3.5/tokenize.py	/^def any(*choices): return group(*choices) + '*'$/;"	kind:function	line:112
 api	../4.RESTful/code/app.py	/^api = Api(app)$/;"	kind:variable	line:9
 api	../5.Database/code/app.py	/^api = Api(app)$/;"	kind:variable	line:11
+api	../6.SQLAlchemy/code/app.py	/^api = Api(app)$/;"	kind:variable	line:14
 app	../3.Flask/app.py	/^app = Flask(__name__)$/;"	kind:variable	line:3
 app	../3.Flask/app2.py	/^app = Flask(__name__)$/;"	kind:variable	line:3
 app	../3.Flask/app3.py	/^app = Flask(__name__)$/;"	kind:variable	line:3
 app	../4.RESTful/code/app.py	/^app = Flask(__name__)$/;"	kind:variable	line:7
 app	../5.Database/code/app.py	/^app = Flask(__name__)$/;"	kind:variable	line:9
+app	../6.SQLAlchemy/code/app.py	/^app = Flask(__name__)$/;"	kind:variable	line:10
 app.py	../3.Flask/app.py	1;"	kind:file	line:1
 app.py	../4.RESTful/code/app.py	1;"	kind:file	line:1
 app.py	../5.Database/code/app.py	1;"	kind:file	line:1
+app.py	../6.SQLAlchemy/code/app.py	1;"	kind:file	line:1
 app2.py	../3.Flask/app2.py	1;"	kind:file	line:1
 app3.py	../3.Flask/app3.py	1;"	kind:file	line:1
 append	../venv/lib/python3.5/_collections_abc.py	/^    def append(self, value):$/;"	kind:member	line:899
@@ -3231,6 +3250,7 @@ attr_matches	../venv/lib/python3.5/rlcompleter.py	/^    def attr_matches(self, t
 attrgetter	../venv/lib/python3.5/operator.py	/^class attrgetter:$/;"	kind:class	line:226
 authenticate	../4.RESTful/code/security.py	/^def authenticate(username, password):$/;"	kind:function	line:38
 authenticate	../5.Database/code/security.py	/^def authenticate(username, password):$/;"	kind:function	line:5
+authenticate	../6.SQLAlchemy/code/security.py	/^def authenticate(username, password):$/;"	kind:function	line:5
 average	../2.Python introduction/classes_inheritance.py	/^    def average(self):$/;"	kind:member	line:7
 average	../2.Python introduction/classes_inheritance2.py	/^    def average(self):$/;"	kind:member	line:56
 average	../2.Python introduction/classes_inheritance2.py	/^    def average(self):$/;"	kind:member	line:7
@@ -3575,6 +3595,7 @@ create_store	../3.Flask/app3.py	/^def create_store():$/;"	kind:function	line:22
 create_table	../5.Database/code/create_tables.py	/^create_table = "CREATE TABLE IF NOT EXISTS items (name text, price integer)"$/;"	kind:variable	line:8
 create_table	../5.Database/code/create_tables.py	/^create_table = "CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY, username text, password text)"$/;"	kind:variable	line:5
 create_table	../5.Database/test.py	/^create_table = "CREATE TABLE users(id int, username text, password text)"$/;"	kind:variable	line:7
+create_tables	../6.SQLAlchemy/code/app.py	/^def create_tables():$/;"	kind:function	line:25
 create_tables.py	../5.Database/code/create_tables.py	1;"	kind:file	line:1
 create_ustar_header	../venv/lib/python3.5/tarfile.py	/^    def create_ustar_header(self, info, encoding, errors):$/;"	kind:member	line:810
 curdir	../venv/lib/python3.5/ntpath.py	/^curdir = '.'$/;"	kind:variable	line:24
@@ -3583,6 +3604,8 @@ currency	../venv/lib/python3.5/locale.py	/^def currency(val, symbol=True, groupi
 cursor	../5.Database/code/create_tables.py	/^cursor = connection.cursor()$/;"	kind:variable	line:4
 cursor	../5.Database/test.py	/^cursor = connection.cursor() # run the query and store the result$/;"	kind:variable	line:5
 data_encoding	../venv/lib/python3.5/codecs.py	/^    data_encoding = 'unknown'$/;"	kind:variable	line:769
+db	../6.SQLAlchemy/code/db.py	/^db = SQLAlchemy()$/;"	kind:variable	line:3
+db.py	../6.SQLAlchemy/code/db.py	1;"	kind:file	line:1
 debug	../venv/lib/python3.5/tarfile.py	/^    debug = 0                   # May be set from 0 (no msgs) to 3 (all msgs)$/;"	kind:variable	line:1379
 decode	../venv/lib/python3.5/base64.py	/^def decode(input, output):$/;"	kind:function	line:507
 decode	../venv/lib/python3.5/codecs.py	/^    def decode(self, input, errors='strict'):$/;"	kind:member	line:156
@@ -3917,7 +3940,11 @@ defpath	../venv/lib/python3.5/ntpath.py	/^    defpath = '\\\\Windows'$/;"	kind:v
 defpath	../venv/lib/python3.5/ntpath.py	/^defpath = '.;C:\\\\bin'$/;"	kind:variable	line:30
 defpath	../venv/lib/python3.5/posixpath.py	/^defpath = ':\/bin:\/usr\/bin'$/;"	kind:variable	line:35
 delete	../4.RESTful/code/app.py	/^    def delete(self, name):$/;"	kind:member	line:54
-delete	../5.Database/code/item.py	/^    def delete(self, name):$/;"	kind:member	line:54
+delete	../5.Database/code/item.py	/^    def delete(self, name):$/;"	kind:member	line:65
+delete	../6.SQLAlchemy/code/resources/item.py	/^    def delete(self, name):$/;"	kind:member	line:49
+delete	../6.SQLAlchemy/code/resources/store.py	/^    def delete(self, name):$/;"	kind:member	line:22
+delete_from_db	../6.SQLAlchemy/code/models/item.py	/^    def delete_from_db(self):$/;"	kind:member	line:30
+delete_from_db	../6.SQLAlchemy/code/models/store.py	/^    def delete_from_db(self):$/;"	kind:member	line:32
 deleter	../venv/lib/python3.5/types.py	/^    def deleter(self, fdel):$/;"	kind:member	line:160
 delitem	../venv/lib/python3.5/operator.py	/^def delitem(a, b):$/;"	kind:function	line:165
 delocalize	../venv/lib/python3.5/locale.py	/^def delocalize(string):$/;"	kind:function	line:303
@@ -4341,8 +4368,12 @@ finalize	../venv/lib/python3.5/weakref.py	/^class finalize:$/;"	kind:class	line:
 finalize_options	../venv/lib/python3.5/distutils/__init__.py	/^        def finalize_options (self):$/;"	kind:member	line:38
 find	../venv/lib/python3.5/collections/__init__.py	/^    def find(self, sub, start=0, end=_sys.maxsize):$/;"	kind:member	line:1182
 find_by_id	../5.Database/code/user.py	/^    def find_by_id(cls, _id):$/;"	kind:member	line:28
-find_by_name	../5.Database/code/item.py	/^    def find_by_name(cls, name):$/;"	kind:member	line:23
+find_by_id	../6.SQLAlchemy/code/models/user.py	/^    def find_by_id(cls, _id):$/;"	kind:member	line:23
+find_by_name	../5.Database/code/item.py	/^    def find_by_name(cls, name):$/;"	kind:member	line:27
+find_by_name	../6.SQLAlchemy/code/models/item.py	/^    def find_by_name(cls, name):$/;"	kind:member	line:23
+find_by_name	../6.SQLAlchemy/code/models/store.py	/^    def find_by_name(cls, name):$/;"	kind:member	line:25
 find_by_username	../5.Database/code/user.py	/^    def find_by_username(cls, username):$/;"	kind:member	line:11
+find_by_username	../6.SQLAlchemy/code/models/user.py	/^    def find_by_username(cls, username):$/;"	kind:member	line:19
 find_config_files	../venv/lib/python3.5/distutils/__init__.py	/^def find_config_files(self):$/;"	kind:function	line:53
 find_cookie	../venv/lib/python3.5/tokenize.py	/^    def find_cookie(line):$/;"	kind:function	line:387
 find_loader	../venv/lib/python3.5/importlib/__init__.py	/^def find_loader(name, path=None):$/;"	kind:function	line:74
@@ -4426,8 +4457,12 @@ generators	../venv/lib/python3.5/__future__.py	/^generators = _Feature((2, 2, 0,
 genericpath.py	../venv/lib/python3.5/genericpath.py	1;"	kind:file	line:1
 get	../4.RESTful/code/app.py	/^    def get(self):$/;"	kind:member	line:89
 get	../4.RESTful/code/app.py	/^    def get(self, name):$/;"	kind:member	line:28
-get	../5.Database/code/item.py	/^    def get(self):$/;"	kind:member	line:97
+get	../5.Database/code/item.py	/^    def get(self):$/;"	kind:member	line:112
 get	../5.Database/code/item.py	/^    def get(self, name):$/;"	kind:member	line:16
+get	../6.SQLAlchemy/code/resources/item.py	/^    def get(self):$/;"	kind:member	line:70
+get	../6.SQLAlchemy/code/resources/item.py	/^    def get(self, name):$/;"	kind:member	line:25
+get	../6.SQLAlchemy/code/resources/store.py	/^    def get(self):$/;"	kind:member	line:35
+get	../6.SQLAlchemy/code/resources/store.py	/^    def get(self, name):$/;"	kind:member	line:5
 get	../venv/lib/python3.5/_collections_abc.py	/^    def get(self, key, default=None):$/;"	kind:member	line:594
 get	../venv/lib/python3.5/collections/__init__.py	/^    def get(self, key, default=None):$/;"	kind:member	line:883
 get	../venv/lib/python3.5/sre_parse.py	/^    def get(self):$/;"	kind:member	line:247
@@ -4676,6 +4711,10 @@ help	../4.RESTful/code/app.py	/^        help="This field cannot be empty!"$/;"	k
 help	../5.Database/code/item.py	/^        help="This field cannot be empty!"$/;"	kind:variable	line:12
 help	../5.Database/code/user.py	/^        help="Username cannot be empty"$/;"	kind:variable	line:51
 help	../5.Database/code/user.py	/^        help="password cannot be empty"$/;"	kind:variable	line:57
+help	../6.SQLAlchemy/code/resources/item.py	/^        help="Every item needs a store_id"$/;"	kind:variable	line:20
+help	../6.SQLAlchemy/code/resources/item.py	/^        help="This field cannot be empty!"$/;"	kind:variable	line:13
+help	../6.SQLAlchemy/code/resources/user.py	/^        help="Username cannot be empty"$/;"	kind:variable	line:11
+help	../6.SQLAlchemy/code/resources/user.py	/^        help="password cannot be empty"$/;"	kind:variable	line:17
 hex_codec.py	../venv/lib/python3.5/encodings/hex_codec.py	1;"	kind:file	line:1
 hex_decode	../venv/lib/python3.5/encodings/hex_codec.py	/^def hex_decode(input, errors='strict'):$/;"	kind:function	line:17
 hex_encode	../venv/lib/python3.5/encodings/hex_codec.py	/^def hex_encode(input, errors='strict'):$/;"	kind:function	line:13
@@ -4704,8 +4743,12 @@ hz.py	../venv/lib/python3.5/encodings/hz.py	1;"	kind:file	line:1
 iadd	../venv/lib/python3.5/operator.py	/^def iadd(a, b):$/;"	kind:function	line:337
 iand	../venv/lib/python3.5/operator.py	/^def iand(a, b):$/;"	kind:function	line:342
 iconcat	../venv/lib/python3.5/operator.py	/^def iconcat(a, b):$/;"	kind:function	line:347
+id	../6.SQLAlchemy/code/models/item.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:7
+id	../6.SQLAlchemy/code/models/store.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:7
+id	../6.SQLAlchemy/code/models/user.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:6
 identity	../4.RESTful/code/security.py	/^def identity(payload):$/;"	kind:function	line:44
 identity	../5.Database/code/security.py	/^def identity(payload):$/;"	kind:function	line:11
+identity	../6.SQLAlchemy/code/security.py	/^def identity(payload):$/;"	kind:function	line:11
 idna.py	../venv/lib/python3.5/encodings/idna.py	1;"	kind:file	line:1
 if_statements.py	../2.Python introduction/if_statements.py	1;"	kind:file	line:1
 ifloordiv	../venv/lib/python3.5/operator.py	/^def ifloordiv(a, b):$/;"	kind:function	line:355
@@ -4725,6 +4768,7 @@ index	../venv/lib/python3.5/collections/__init__.py	/^    def index(self, sub, s
 index	../venv/lib/python3.5/operator.py	/^def index(a):$/;"	kind:function	line:87
 indexOf	../venv/lib/python3.5/operator.py	/^def indexOf(a, b):$/;"	kind:function	line:173
 init_builtin	../venv/lib/python3.5/imp.py	/^def init_builtin(name):$/;"	kind:function	line:317
+insert	../5.Database/code/item.py	/^    def insert(cls, item):$/;"	kind:member	line:55
 insert	../venv/lib/python3.5/_collections_abc.py	/^    def insert(self, index, value):$/;"	kind:member	line:895
 insert	../venv/lib/python3.5/collections/__init__.py	/^    def insert(self, i, item): self.data.insert(i, item)$/;"	kind:member	line:1078
 insert	../venv/lib/python3.5/sre_parse.py	/^    def insert(self, index, code):$/;"	kind:member	line:163
@@ -4824,8 +4868,11 @@ istitle	../venv/lib/python3.5/collections/__init__.py	/^    def istitle(self): r
 isub	../venv/lib/python3.5/operator.py	/^def isub(a, b):$/;"	kind:function	line:395
 isupper	../venv/lib/python3.5/collections/__init__.py	/^    def isupper(self): return self.data.isupper()$/;"	kind:member	line:1202
 item.py	../5.Database/code/item.py	1;"	kind:file	line:1
+item.py	../6.SQLAlchemy/code/models/item.py	1;"	kind:file	line:1
+item.py	../6.SQLAlchemy/code/resources/item.py	1;"	kind:file	line:1
 itemgetter	../venv/lib/python3.5/operator.py	/^class itemgetter:$/;"	kind:class	line:265
 items	../4.RESTful/code/app.py	/^items = []$/;"	kind:variable	line:13
+items	../6.SQLAlchemy/code/models/store.py	/^    items = db.relationship('ItemModel', lazy='dynamic')$/;"	kind:variable	line:10
 items	../venv/lib/python3.5/_collections_abc.py	/^    def items(self):$/;"	kind:member	line:613
 items	../venv/lib/python3.5/collections/__init__.py	/^    def items(self):$/;"	kind:member	line:224
 items	../venv/lib/python3.5/weakref.py	/^    def items(self):$/;"	kind:member	line:208
@@ -4841,8 +4888,11 @@ join	../venv/lib/python3.5/collections/__init__.py	/^    def join(self, seq): re
 join	../venv/lib/python3.5/ntpath.py	/^def join(path, *paths):$/;"	kind:function	line:74
 join	../venv/lib/python3.5/posixpath.py	/^def join(a, *p):$/;"	kind:function	line:71
 joinuser	../venv/lib/python3.5/site.py	/^    def joinuser(*args):$/;"	kind:function	line:324
+json	../6.SQLAlchemy/code/models/item.py	/^    def json(self):$/;"	kind:member	line:19
+json	../6.SQLAlchemy/code/models/store.py	/^    def json(self):$/;"	kind:member	line:21
 jwt	../4.RESTful/code/app.py	/^jwt = JWT(app, authenticate, identity)  # creates a new endpoint \/auth$/;"	kind:variable	line:11
 jwt	../5.Database/code/app.py	/^jwt = JWT(app, authenticate, identity)  # creates a new endpoint \/auth$/;"	kind:variable	line:13
+jwt	../6.SQLAlchemy/code/app.py	/^jwt = JWT(app, authenticate, identity)  # creates a new endpoint \/auth$/;"	kind:variable	line:16
 k	../venv/lib/python3.5/locale.py	/^    k = k.replace('_', '')$/;"	kind:variable	line:713
 keyrefs	../venv/lib/python3.5/weakref.py	/^    def keyrefs(self):$/;"	kind:member	line:460
 keys	../venv/lib/python3.5/_collections_abc.py	/^    def keys(self):$/;"	kind:member	line:609
@@ -4985,6 +5035,8 @@ my_list_adition	../2.Python introduction/classes_args_kwargs.py	/^def my_list_ad
 my_long_method	../2.Python introduction/classes_args_kwargs.py	/^def my_long_method(arg1, arg2, arg3, arg4):$/;"	kind:function	line:4
 my_method	../2.Python introduction/classes_args_kwargs.py	/^def my_method(arg1, arg2):$/;"	kind:function	line:1
 my_set	../2.Python introduction/dictionaries.py	/^my_set = { 1, 2, 3, 4, 5} # unordered unique elements$/;"	kind:variable	line:1
+name	../6.SQLAlchemy/code/models/item.py	/^    name = db.Column(db.String(80))$/;"	kind:variable	line:8
+name	../6.SQLAlchemy/code/models/store.py	/^    name = db.Column(db.String(80))$/;"	kind:variable	line:8
 name	../venv/lib/python3.5/hmac.py	/^    def name(self):$/;"	kind:member	line:87
 name	../venv/lib/python3.5/os.py	/^    name = 'ce'$/;"	kind:variable	line:89
 name	../venv/lib/python3.5/os.py	/^    name = 'nt'$/;"	kind:variable	line:69
@@ -5059,10 +5111,13 @@ parse_template	../venv/lib/python3.5/sre_parse.py	/^def parse_template(source, p
 parser	../4.RESTful/code/app.py	/^    parser = reqparse.RequestParser()$/;"	kind:variable	line:19
 parser	../5.Database/code/item.py	/^    parser = reqparse.RequestParser()$/;"	kind:variable	line:7
 parser	../5.Database/code/user.py	/^    parser = reqparse.RequestParser()$/;"	kind:variable	line:46
+parser	../6.SQLAlchemy/code/resources/item.py	/^    parser = reqparse.RequestParser()$/;"	kind:variable	line:8
+parser	../6.SQLAlchemy/code/resources/user.py	/^    parser = reqparse.RequestParser()$/;"	kind:variable	line:6
 partial	../venv/lib/python3.5/functools.py	/^def partial(func, *args, **keywords):$/;"	kind:function	line:240
 partialmethod	../venv/lib/python3.5/functools.py	/^class partialmethod(object):$/;"	kind:class	line:267
 partition	../venv/lib/python3.5/collections/__init__.py	/^    def partition(self, sep):$/;"	kind:member	line:1209
 passing_functions.py	../2.Python introduction/passing_functions.py	1;"	kind:file	line:1
+password	../6.SQLAlchemy/code/models/user.py	/^    password = db.Column(db.String(80))$/;"	kind:variable	line:8
 path	../venv/lib/python3.5/tarfile.py	/^    path = property(_getpath, _setpath)$/;"	kind:variable	line:761
 path_hook	../venv/lib/python3.5/importlib/_bootstrap_external.py	/^    def path_hook(cls, *loader_details):$/;"	kind:member	line:1300
 path_hook_for_FileFinder	../venv/lib/python3.5/importlib/_bootstrap_external.py	/^        def path_hook_for_FileFinder(path):$/;"	kind:function	line:1309
@@ -5099,12 +5154,16 @@ popitem	../venv/lib/python3.5/weakref.py	/^    def popitem(self):$/;"	kind:membe
 pos	../venv/lib/python3.5/operator.py	/^def pos(a):$/;"	kind:function	line:120
 posixpath.py	../venv/lib/python3.5/posixpath.py	1;"	kind:file	line:1
 post	../4.RESTful/code/app.py	/^    def post(self, name):$/;"	kind:member	line:38
-post	../5.Database/code/item.py	/^    def post(self, name):$/;"	kind:member	line:36
+post	../5.Database/code/item.py	/^    def post(self, name):$/;"	kind:member	line:40
 post	../5.Database/code/user.py	/^    def post(self):$/;"	kind:member	line:60
+post	../6.SQLAlchemy/code/resources/item.py	/^    def post(self, name):$/;"	kind:member	line:35
+post	../6.SQLAlchemy/code/resources/store.py	/^    def post(self, name):$/;"	kind:member	line:11
+post	../6.SQLAlchemy/code/resources/user.py	/^    def post(self):$/;"	kind:member	line:20
 pow	../venv/lib/python3.5/operator.py	/^def pow(a, b):$/;"	kind:function	line:124
 prepare_class	../venv/lib/python3.5/types.py	/^def prepare_class(name, bases=(), kwds=None):$/;"	kind:function	line:59
 prev_sys_path	../venv/bin/activate_this.py	/^prev_sys_path = list(sys.path)$/;"	kind:variable	line:23
 prf	../venv/lib/python3.5/hashlib.py	/^        def prf(msg, inner=inner, outer=outer):$/;"	kind:function	line:173
+price	../6.SQLAlchemy/code/models/item.py	/^    price = db.Column(db.Float(precision=2))$/;"	kind:variable	line:9
 printMe	../2.Python introduction/test.py	/^def printMe(var):$/;"	kind:function	line:7
 print_function	../venv/lib/python3.5/__future__.py	/^print_function = _Feature((2, 6, 0, "alpha", 2),$/;"	kind:variable	line:126
 ptcp154.py	../venv/lib/python3.5/encodings/ptcp154.py	1;"	kind:file	line:1
@@ -5113,7 +5172,8 @@ punycode_decode	../venv/lib/python3.5/encodings/punycode.py	/^def punycode_decod
 punycode_encode	../venv/lib/python3.5/encodings/punycode.py	/^def punycode_encode(text):$/;"	kind:function	line:117
 purge	../venv/lib/python3.5/re.py	/^def purge():$/;"	kind:function	line:226
 put	../4.RESTful/code/app.py	/^    def put(self, name):$/;"	kind:member	line:61
-put	../5.Database/code/item.py	/^    def put(self, name):$/;"	kind:member	line:69
+put	../5.Database/code/item.py	/^    def put(self, name):$/;"	kind:member	line:80
+put	../6.SQLAlchemy/code/resources/item.py	/^    def put(self, name):$/;"	kind:member	line:56
 python-config	../venv/bin/python-config	1;"	kind:file	line:1
 python-config.py	../venv/lib/python3.5/config-3.5m-x86_64-linux-gnu/python-config.py	1;"	kind:file	line:1
 pyver	../venv/bin/python-config	/^pyver = sysconfig.get_config_var('VERSION')$/;"	kind:variable	line:30
@@ -5196,6 +5256,10 @@ required	../4.RESTful/code/app.py	/^        required=True,$/;"	kind:variable	lin
 required	../5.Database/code/item.py	/^        required=True,$/;"	kind:variable	line:11
 required	../5.Database/code/user.py	/^        required=True,$/;"	kind:variable	line:50
 required	../5.Database/code/user.py	/^        required=True,$/;"	kind:variable	line:56
+required	../6.SQLAlchemy/code/resources/item.py	/^        required=True,$/;"	kind:variable	line:12
+required	../6.SQLAlchemy/code/resources/item.py	/^        required=True,$/;"	kind:variable	line:19
+required	../6.SQLAlchemy/code/resources/user.py	/^        required=True,$/;"	kind:variable	line:10
+required	../6.SQLAlchemy/code/resources/user.py	/^        required=True,$/;"	kind:variable	line:16
 reset	../venv/lib/python3.5/codecs.py	/^    def reset(self):$/;"	kind:member	line:202
 reset	../venv/lib/python3.5/codecs.py	/^    def reset(self):$/;"	kind:member	line:243
 reset	../venv/lib/python3.5/codecs.py	/^    def reset(self):$/;"	kind:member	line:275
@@ -5245,11 +5309,15 @@ sameopenfile	../venv/lib/python3.5/genericpath.py	/^def sameopenfile(fp1, fp2):$
 samestat	../venv/lib/python3.5/genericpath.py	/^def samestat(s1, s2):$/;"	kind:function	line:81
 sample	../venv/lib/python3.5/random.py	/^    def sample(self, population, k):$/;"	kind:member	line:289
 sample	../venv/lib/python3.5/random.py	/^sample = _inst.sample$/;"	kind:variable	line:735
+save_to_db	../6.SQLAlchemy/code/models/item.py	/^    def save_to_db(self):$/;"	kind:member	line:26
+save_to_db	../6.SQLAlchemy/code/models/store.py	/^    def save_to_db(self):$/;"	kind:member	line:28
+save_to_db	../6.SQLAlchemy/code/models/user.py	/^    def save_to_db(self):$/;"	kind:member	line:14
 scan	../venv/lib/python3.5/re.py	/^    def scan(self, string):$/;"	kind:member	line:361
 search	../venv/lib/python3.5/re.py	/^def search(pattern, string, flags=0):$/;"	kind:function	line:170
 search_function	../venv/lib/python3.5/encodings/__init__.py	/^def search_function(encoding):$/;"	kind:function	line:69
 security.py	../4.RESTful/code/security.py	1;"	kind:file	line:1
 security.py	../5.Database/code/security.py	1;"	kind:file	line:1
+security.py	../6.SQLAlchemy/code/security.py	1;"	kind:file	line:1
 seed	../venv/lib/python3.5/random.py	/^    def seed(self, *args, **kwds):$/;"	kind:member	line:670
 seed	../venv/lib/python3.5/random.py	/^    def seed(self, a=None, version=2):$/;"	kind:member	line:93
 seed	../venv/lib/python3.5/random.py	/^seed = _inst.seed$/;"	kind:variable	line:728
@@ -5362,8 +5430,12 @@ stn	../venv/lib/python3.5/tarfile.py	/^def stn(s, length, encoding, errors):$/;"
 stock_price	../2.Python introduction/excercise_1.py	/^    def stock_price(self):$/;"	kind:member	line:14
 stock_price	../2.Python introduction/exercise2.py	/^    def stock_price(self):$/;"	kind:member	line:12
 store	../2.Python introduction/exercise2.py	/^store = Store("Test")$/;"	kind:variable	line:39
+store	../6.SQLAlchemy/code/models/item.py	/^    store = db.relationship('StoreModel')$/;"	kind:variable	line:12
+store.py	../6.SQLAlchemy/code/models/store.py	1;"	kind:file	line:1
+store.py	../6.SQLAlchemy/code/resources/store.py	1;"	kind:file	line:1
 store2	../2.Python introduction/exercise2.py	/^store2 = Store("Amazon")$/;"	kind:variable	line:40
 store_details	../2.Python introduction/exercise2.py	/^    def store_details(store):$/;"	kind:member	line:26
+store_id	../6.SQLAlchemy/code/models/item.py	/^    store_id = db.Column(db.Integer, db.ForeignKey('stores.id'))$/;"	kind:variable	line:11
 stores	../3.Flask/app2.py	/^stores = [$/;"	kind:variable	line:5
 stores	../3.Flask/app3.py	/^stores = [$/;"	kind:variable	line:5
 str	../venv/lib/python3.5/locale.py	/^def str(val):$/;"	kind:function	line:299
@@ -5440,6 +5512,10 @@ type	../4.RESTful/code/app.py	/^        type=float,$/;"	kind:variable	line:22
 type	../5.Database/code/item.py	/^        type=float,$/;"	kind:variable	line:10
 type	../5.Database/code/user.py	/^        type=str,$/;"	kind:variable	line:49
 type	../5.Database/code/user.py	/^        type=str,$/;"	kind:variable	line:55
+type	../6.SQLAlchemy/code/resources/item.py	/^        type=float,$/;"	kind:variable	line:11
+type	../6.SQLAlchemy/code/resources/item.py	/^        type=int,$/;"	kind:variable	line:18
+type	../6.SQLAlchemy/code/resources/user.py	/^        type=str,$/;"	kind:variable	line:15
+type	../6.SQLAlchemy/code/resources/user.py	/^        type=str,$/;"	kind:variable	line:9
 types.py	../venv/lib/python3.5/types.py	1;"	kind:file	line:1
 undefined.py	../venv/lib/python3.5/encodings/undefined.py	1;"	kind:file	line:1
 unicode_escape.py	../venv/lib/python3.5/encodings/unicode_escape.py	1;"	kind:file	line:1
@@ -5454,6 +5530,7 @@ unregister_archive_format	../venv/lib/python3.5/shutil.py	/^def unregister_archi
 unregister_unpack_format	../venv/lib/python3.5/shutil.py	/^def unregister_unpack_format(name):$/;"	kind:function	line:861
 untokenize	../venv/lib/python3.5/tokenize.py	/^    def untokenize(self, iterable):$/;"	kind:member	line:245
 untokenize	../venv/lib/python3.5/tokenize.py	/^def untokenize(iterable):$/;"	kind:function	line:319
+update	../5.Database/code/item.py	/^def update(cls, item):$/;"	kind:function	line:100
 update	../venv/lib/python3.5/_collections_abc.py	/^    def update(*args, **kwds):$/;"	kind:member	line:758
 update	../venv/lib/python3.5/_weakrefset.py	/^    def update(self, other):$/;"	kind:member	line:116
 update	../venv/lib/python3.5/collections/__init__.py	/^    def update(*args, **kwds):$/;"	kind:member	line:584
@@ -5468,7 +5545,10 @@ urlsafe_b64encode	../venv/lib/python3.5/base64.py	/^def urlsafe_b64encode(s):$/;
 user	../5.Database/test.py	/^user = (1, 'jose', 'asdf')$/;"	kind:variable	line:11
 user.py	../4.RESTful/code/user.py	1;"	kind:file	line:1
 user.py	../5.Database/code/user.py	1;"	kind:file	line:1
+user.py	../6.SQLAlchemy/code/models/user.py	1;"	kind:file	line:1
+user.py	../6.SQLAlchemy/code/resources/user.py	1;"	kind:file	line:1
 userid_mapping	../4.RESTful/code/security.py	/^userid_mapping = { u.id: u for u in users }$/;"	kind:variable	line:36
+username	../6.SQLAlchemy/code/models/user.py	/^    username = db.Column(db.String(80))$/;"	kind:variable	line:7
 username_mapping	../4.RESTful/code/security.py	/^username_mapping = { u.username: u for u in users }$/;"	kind:variable	line:26
 users	../4.RESTful/code/security.py	/^users = [$/;"	kind:variable	line:14
 users	../5.Database/test.py	/^users = [$/;"	kind:variable	line:15

@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "c:/Home/pers/angular/api-tutorial/venv/scripts/python.exe",
+    "python.pythonPath": "${workspaceRoot}/venv/bin/python",
     "files.exclude": {
         "**/.git": true,
         "**/__pycache__": true
